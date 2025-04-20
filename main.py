@@ -9,6 +9,7 @@ from replit import db  # Replit database
 import sys
 from monitoring import MESSAGES_RECEIVED, ABUSIVE_MESSAGES, COMMANDS_TRIGGERED, start_metrics_server
 import logging
+from security import validate_token, is_rate_limited, is_command_safe
 
 
 # List of abusive words to filter
