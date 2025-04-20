@@ -7,6 +7,9 @@ import time
 from dotenv import load_dotenv
 from replit import db  # Replit database
 import sys
+from monitoring import MESSAGES_RECEIVED, ABUSIVE_MESSAGES, COMMANDS_TRIGGERED, start_metrics_server
+import logging
+
 
 # List of abusive words to filter
 abusive_words = {"sex", "fuck", "bitch", "fucker", "suicide", "bully", "fat", "fucked", "mother fucker", "bitch"}
